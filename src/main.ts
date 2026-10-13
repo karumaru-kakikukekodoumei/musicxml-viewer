@@ -1,5 +1,6 @@
 import { parseMusicXml } from "./parser";
 import { renderScore } from "./render";
+import sample from "../public/sample.musicxml?raw";
 
 const view = document.getElementById("score")!;
 const errorEl = document.getElementById("error")!;
@@ -18,8 +19,6 @@ document.getElementById("file")!.addEventListener("change", async (ev) => {
   if (f) show(await f.text());
 });
 
-async function loadSample(): Promise<void> {
-  show(await (await fetch("/sample.musicxml")).text());
-}
+const loadSample = () => show(sample);
 document.getElementById("sample")!.addEventListener("click", loadSample);
-void loadSample();
+loadSample();
