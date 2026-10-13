@@ -5,6 +5,8 @@ GitHub への公開(リポジトリ作成・push)は、ユーザーの指示が�
 
 # musicxml-viewer
 
+デモ: https://karumaru-kakikukekodoumei.github.io/musicxml-viewer/
+
 MusicXML(score-partwise)を読み込んで、ブラウザに SVG の楽譜として表示するビューア。
 Finale / Sibelius などの商用楽譜ソフトの代替を目指す小さな試作。
 
@@ -23,6 +25,9 @@ pnpm typecheck
 ## 対応状況
 - 対応: 音符 / 休符 / 和音 / 付点 / 臨時記号 / 加線 / 符幹 / 旗 / G・F・C 音部記号 / 調号 / 拍子 / 小節番号 / 複数パート(縦積み) / 幅に応じた改行
 - 未対応: 連桁 / タイ・スラー / 強弱・歌詞などの記号 / score-timewise / 圧縮 .mxl / パート同士の縦位置の揃え / 小節内の臨時記号ルール(音符ごとに alter があれば出すだけ)
+
+## 公開
+`main` に push すると GitHub Actions がテスト・ビルドして GitHub Pages に自動デプロイする(`.github/workflows/pages.yml`)。
 
 ## ライセンス
 MIT([LICENSE](LICENSE))
