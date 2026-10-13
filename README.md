@@ -25,7 +25,7 @@ pnpm typecheck
 - 未対応: 連桁 / タイ・スラー / 強弱・歌詞などの記号 / score-timewise / 圧縮 .mxl / パート同士の縦位置の揃え / 小節内の臨時記号ルール(音符ごとに alter があれば出すだけ)
 
 ## ライセンス
-MIT(公開時に LICENSE を追加する)
+MIT([LICENSE](LICENSE))
 
 ## 依存ライブラリの確認結果
 - fast-xml-parser 5.11.2: MIT、NaturalIntelligence 管理、継続的にメンテ、`pnpm audit` で既知の脆弱性なし
